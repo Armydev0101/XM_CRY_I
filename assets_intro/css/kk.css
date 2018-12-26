@@ -209,12 +209,13 @@
     width: 45%;
 }
 .p-login .form-control-light {
-    border-color: rgba(0, 146, 221, 0.2);
-    color: #fff;
-    background: rgba(1, 2, 33, 0.45);
+    color: #291600;
+    background: rgba(255, 255, 255, 0);
+    border: 0px solid;
+    border-bottom: 1px solid rgba(222, 162, 81, 0.6);
 }
 .p-login .txt-default {
-    color: #0092dd;
+    color: #99550a;
 }
 .p-login .checkbox {
     float: left;
@@ -249,21 +250,23 @@
     float: right;
 }
 .p-login .forget-password a {
-    color: rgb(0, 232, 255);
-    font-size:14px;
+    color: rgb(142, 72, 9);
+    font-size: 14px;
     font-family: "Open Sans", sans-serif;
+    font-weight: 600;
 }
 .p-login .forget-password {
     margin-top:5px;
 }
 .p-login .title.xlarge {
     font-size: 55px;
-    color: #0093de;
     margin-bottom: 5px;
+    color: #c7761c;
+    text-shadow: 1px 1px 0px #fff;
 }
 .p-login .title-sub.tiny {
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.6) !important;
+    font-size: 17px;
+    color: rgb(107, 51, 1) !important;
 }
 .p-register .inner-wrapper.pd-80 {
     padding: 50px;
@@ -344,8 +347,20 @@
 .light hr, hr.light {
     border-color: rgba(210, 148, 68, 0.5);
 }
-
-
+.nc-sociallink {
+    padding-bottom:20px;
+}
+.block-home {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    border: 1px solid rgba(224, 130, 34, 0.5);
+}
+.block-home .form-widget-inputicon .form-widget--form-control {
+    height: 45px;
+}
+.mt-15 {
+    margin-top:15px;
+}
 
 
 
@@ -516,6 +531,18 @@
     .countdown-widget.tiny .dash_title {
         font-size: 13px;
         padding: 0px 10px;
+    }
+    .block-home {
+        width: 100%;
+        border: 1px solid rgb(255, 254, 248);
+    }
+    .block-home .form-widget-inputicon .form-widget--form-control {
+        height: 42px;
+        font-size: 15px;
+    }
+    .p-login .title-sub.tiny {
+        font-size: 15px;
+        color: rgb(107, 51, 1) !important;
     }
 }
 @media (max-width:768px) {
@@ -791,6 +818,19 @@
     
 }
 @media (max-width:380px) {
+    .p-register.p-login .mainwrapper--nclayer1.pd-100 {
+        padding-bottom: 20px;
+        padding-top: 75px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .p-login .title.xlarge {
+        font-size:42px;
+    }
+    .block-home {
+        border: 1px solid rgba(255, 254, 248, 0.5);
+        border-radius: 5px;
+    }
     #home .nc-sociallink {
         padding-top: 0px;
         padding-bottom: 0px;
@@ -799,7 +839,9 @@
         top: 310px;
     }
     .p-login #home .inner-wrapper .container {
-        padding-top:30px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-radius: 0px;
     }
     .p-forgot.p-login .title.xlarge {
         font-size: 27px;
@@ -807,6 +849,9 @@
     
     .countdown-widget.tiny .dash_title {
         padding: 0px 10px;
+    }
+    #home .nc-sociallink {
+        bottom: -10px;
     }
     
 }
